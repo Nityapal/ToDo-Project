@@ -9,11 +9,27 @@
 </head>
 <body>
 
-	<div class="container-fluid p-0 m-0">
+	<div class="container">
     	<%@include file="navbar.jsp" %>
     	
     	<br>
-    	<h1>This is add notes page</h1>
+    	<h1>fill yourr details--></h1>
+    	
+    	<!-- add form -->
+    	<form action="SaveNoteServlet" method="post">
+		  <div class="form-group">
+		    <label for="title">Note title</label>
+		    <input required type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter here">
+		    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+		  </div>
+		  <div class="form-group">
+		    <label for="content">Note content</label>
+		    <textarea id="content" placeholder="Enter yourr note here" class="form-control" style="height:300px"></textarea>
+		  </div>
+		  <div class="container text-center">
+		  	<button type="submit" class="btn btn-primary">Add</button>
+		  </div>
+		</form>    	
     	
     </div>
 
