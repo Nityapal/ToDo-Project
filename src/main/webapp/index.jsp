@@ -8,6 +8,18 @@
     	
     <title>Tudu : Home page</title>
     <%@include file="all_js_css.jsp" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+	<style>
+	  body {
+	    font-family: 'Pixelify Sans', sans-serif;
+	  }
+	
+	  .card, .card-title, .card-text, .btn {
+	    font-family: 'Pixelify Sans', sans-serif;
+	  }
+	</style>
   </head>
   <body>
     
