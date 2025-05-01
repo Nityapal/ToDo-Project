@@ -16,15 +16,15 @@
     	<h1>fill yourr details--></h1>
     	
     	<!-- add form -->
-    	<form action="SaveNoteServlet" method="post">
+    	<form action="SaveNotesServlet" method="post">
 		  <div class="form-group">
 		    <label for="title">Note title</label>
-		    <input required type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter here">
+		    <input name="title" required type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter here">
 		    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
 		  </div>
 		  <div class="form-group">
 		    <label for="content">Note content</label>
-		    <textarea id="content" placeholder="Enter yourr note here" class="form-control" style="height:300px"></textarea>
+		    <textarea name="content" required id="content" placeholder="Enter yourr note here" class="form-control" style="height:300px"></textarea>
 		  </div>
 		  <div class="container text-center">
 		  	<button type="submit" class="btn btn-primary">Add</button>
