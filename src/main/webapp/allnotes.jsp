@@ -52,7 +52,7 @@
 				    <p class="card-text"> <%= note.getContent() %> </p>
 				    <div class="container text-center">
 				    	<a href="DeleteServlet?noteid=<%= note.getId() %>"  class="btn" style="background-color: #a67c52; color: white">Delete</a>
-				    	<a href="#" class="btn" style="background-color: #a67c52; color: white">Update</a>
+				    	<a href="edit.jsp?noteid=<%= note.getId() %>" class="btn" style="background-color: #a67c52; color: white">Update</a>
 				    </div>
 				  </div>
 				</div>

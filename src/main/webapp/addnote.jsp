@@ -39,7 +39,7 @@
 		    <textarea name="content" required id="content" placeholder="Enter yourr note here" class="form-control" style="height:300px"></textarea>
 		  </div>
 		  <div class="container text-center">
-		  	<button type="submit" class="btn btn-primary">Add</button>
+		  	<button type="submit" class="btn purple" style="color: white">Add</button>
 		  </div>
 		</form>    	
     	
