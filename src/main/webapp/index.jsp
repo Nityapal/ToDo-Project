@@ -26,7 +26,15 @@
     <div class="container-fluid">
     	<%@include file="navbar.jsp" %>
     	<br>
-    	<h1>This is home page</h1>
+    	
+		<div class="card p-5" style="background-color: #a8b197;">
+			<img alt="" class="img-fluid mx-auto mt-4" style="width:400px" src="img/diary.png">
+			<h1 class="text-center mt-3"><b>Welcome to Tudu</b></h1>
+			<h2 class="text-center m-5 ">Here u can list all ur to-do's and add secret notes or hell lots of stuff</h2>
+			<div class="container text-center">
+				<a href="addnote.jsp" class="btn p-3" style="background-color: #c36e68; color: white;">lesgooo</a>
+			</div>
+		</div>
     	
     </div>
 

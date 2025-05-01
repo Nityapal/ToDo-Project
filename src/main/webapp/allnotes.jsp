@@ -4,6 +4,8 @@
 <%@page import="org.hibernate.Query"%>
 <%@page import="com.helper.FactoryProvider"%>
 <%@page import="org.hibernate.Session"%>
+<%@ page import="java.text.SimpleDateFormat" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -50,6 +52,13 @@
 				  <div class="card-body px-5">
 				    <h5 class="card-title"> <%= note.getTitle() %> </h5>
 				    <p class="card-text"> <%= note.getContent() %> </p>
+				    
+					<%
+					    SimpleDateFormat sdf = new SimpleDateFormat("dd MMM yyyy, hh:mm a");
+					    String formattedDate = sdf.format(note.getAddedDate());
+					%>
+					<p><b><%= formattedDate %></b></p>
+
 				    <div class="container text-center">
 				    	<a href="DeleteServlet?noteid=<%= note.getId() %>"  class="btn" style="background-color: #a67c52; color: white">Delete</a>
 				    	<a href="edit.jsp?noteid=<%= note.getId() %>" class="btn" style="background-color: #a67c52; color: white">Update</a>
